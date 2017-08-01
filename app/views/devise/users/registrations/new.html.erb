@@ -1,0 +1,14 @@
+<h1> Create a User</h1>
+
+<%= form_for :users do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %> <br />
+
+  <%= f.label :location %>
+  <%= f.text_area :location %><br />
+
+  <%= f.label :address %>
+  <%= f.text_area :address %><br />
+
+  <%= f.submit %>
+<% end %> 

@@ -16,11 +16,11 @@ ActiveRecord::Schema.define(version: 20170729221255) do
   enable_extension "plpgsql"
 
   create_table "caregivers", force: :cascade do |t|
-    t.string "name"
     t.integer "years_of_experience"
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -35,13 +35,6 @@ ActiveRecord::Schema.define(version: 20170729221255) do
     t.index ["reset_password_token"], name: "index_caregivers_on_reset_password_token", unique: true
   end
 
-  create_table "plant_tasks", id: false, force: :cascade do |t|
-    t.integer "plant_id"
-    t.integer "task_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "plants", force: :cascade do |t|
     t.integer "user_id"
     t.string "name"
@@ -53,7 +46,7 @@ ActiveRecord::Schema.define(version: 20170729221255) do
 
   create_table "tasks", force: :cascade do |t|
     t.integer "caregiver_id"
-    t.integer "user_id"
+    t.integer "plant_id"
     t.string "name"
     t.string "description"
     t.datetime "time"
