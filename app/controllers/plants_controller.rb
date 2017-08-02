@@ -38,6 +38,6 @@ class PlantsController < ApplicationController
   end 
 
   def whitelisted_params
-    params.require(:plant).permit(:name, :medium, :type_of_fertilizer).merge(user_id)
+    params.require(:plant).permit(:name, :medium, :type_of_fertilizer).merge(user_id: current_user.id)
   end 
 end

@@ -7,7 +7,6 @@ class TasksController < ApplicationController
 
   def new
     @task = Task.new
-    task.save
   end
 
   def create
@@ -39,6 +38,6 @@ class TasksController < ApplicationController
   end
 
   def whitelisted_params
-    params.require(:task).permit(:name, :description, :time, :price).merge(user_id)
+    params.require(:task).permit(:name, :description, :time, :price).merge(user_id: current_user.id)
   end 
 end 
