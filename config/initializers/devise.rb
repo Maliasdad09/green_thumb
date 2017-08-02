@@ -6,7 +6,8 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '8b250e9aabcf08dc0b63edc072024a9f75d93eb907732beb22621794f19ccc6818133ecb311fbdb856b60932dbf3a58869be5cdda308b4ae84b983bc46b5afd8'
+
+  # config.secret_key = '051f94c40f96c2a0243f6efc2c0d2f4154a793d19ecd876d94f07511ce25647ffd06e11b15ecb1cf888efe86c4ab6600a664352ce8b94cf984f2490149f7c5c5'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -108,7 +109,8 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '579a8c1a879794ace7d71f13de00746f82a33e585f982015d4bcd013f006a0c624a1711c0a8caac3e7eea22ca3c4e1bfdf798aee629b51c78eb1447357ed32ca'
+  # config.pepper = '73476d888d80b9ad082f1116b3d27b4f0175ababdda432a27422f069039710ae8473e73ea7300d60283a3e68e0ad5ff047848043267b851027c8c6a0d406d5a3'
+
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -223,7 +225,8 @@ Devise.setup do |config|
   # Turn scoped views on. Before rendering "sessions/new", it will first check for
   # "users/sessions/new". It's turned off by default because it's slower if you
   # are using only default views.
-  # config.scoped_views = true
+  # config.scoped_views = false
+
 
   # Configure the default scope given to Warden. By default it's the first
   # devise role declared in your routes (usually :user).
@@ -231,7 +234,8 @@ Devise.setup do |config|
 
   # Set this configuration to false if you want /users/sign_out to sign out
   # only the current scope. By default, Devise signs out all scopes.
-  # config.sign_out_all_scopes = false
+  # config.sign_out_all_scopes = true
+
 
   # ==> Navigation configuration
   # Lists the formats that should be treated as navigational. Formats like

@@ -40,4 +40,4 @@ class TasksController < ApplicationController
   def whitelisted_params
     params.require(:task).permit(:name, :description, :time, :price).merge(user_id: current_user.id)
   end 
-end 
+end
