@@ -1,12 +1,7 @@
 class CreateTasks < ActiveRecord::Migration[5.1]
   def change
     create_table :tasks do |t|
-<<<<<<< HEAD
-      t.integer :caregiver_id
-      t.integer :plant_id
-=======
       t.integer :user_id
->>>>>>> old-state
       t.string :name 
       t.string :description
       t.datetime :time 
