@@ -7026,3 +7026,179 @@ Processing by TasksController#show as HTML
 Completed 200 OK in 29ms (Views: 22.9ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-08-03 19:04:36 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 4323ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/app/assets/config
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/app/assets/images
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/app/assets/javascripts
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/app/assets/stylesheets
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actioncable-5.1.2/lib/assets/compiled
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionview-5.1.2/lib/assets/compiled
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/node_modules
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-4.0.0.alpha6/assets/stylesheets
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-4.0.0.alpha6/assets/javascripts):
+    4:     <title>GreenThumb</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:1
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___447874896245048981_70278861966620'
+Started GET "/" for 127.0.0.1 at 2017-08-03 19:04:42 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/app/assets/config
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/app/assets/images
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/app/assets/javascripts
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/app/assets/stylesheets
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actioncable-5.1.2/lib/assets/compiled
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionview-5.1.2/lib/assets/compiled
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/node_modules
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-4.0.0.alpha6/assets/stylesheets
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-4.0.0.alpha6/assets/javascripts):
+    4:     <title>GreenThumb</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:1
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___447874896245048981_70278904998840'
+Started GET "/" for 127.0.0.1 at 2017-08-03 19:05:22 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2393ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/app/assets/config
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/app/assets/images
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/app/assets/javascripts
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/app/assets/stylesheets
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actioncable-5.1.2/lib/assets/compiled
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionview-5.1.2/lib/assets/compiled
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/scottyplunkett/Desktop/CODE/james_plants/green_thumb/node_modules
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-4.0.0.alpha6/assets/stylesheets
+  /Users/scottyplunkett/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-4.0.0.alpha6/assets/javascripts):
+    4:     <title>GreenThumb</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___447874896245048981_70278920816280'
+Started GET "/" for 127.0.0.1 at 2017-08-03 19:06:50 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3605ms (Views: 3593.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/plants" for 127.0.0.1 at 2017-08-03 19:06:57 -0500
+Processing by PlantsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering plants/index.html.erb within layouts/application
+  [1m[36mPlant Load (0.5ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  Rendered plants/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 79ms (Views: 51.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/plants/new" for 127.0.0.1 at 2017-08-03 19:06:58 -0500
+Processing by PlantsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering plants/new.html.erb within layouts/application
+  Rendered plants/_form.html.erb (21.5ms)
+  Rendered plants/new.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 73ms (Views: 69.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/plants" for 127.0.0.1 at 2017-08-03 19:07:04 -0500
+Processing by PlantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xwTb5kGNEX43py40wYT3Oc2BXitnR5QFT0Hr/ZI5LAd3D2ldqHUv/+v3EG8W/AJ/8xjypEW5on7+ItRUdjUAAw==", "plant"=>{"name"=>"dasdf", "medium"=>"adsfas", "type_of_fertilizer"=>"15:00"}, "commit"=>"Create Plant"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "plants" ("user_id", "name", "medium", "type_of_fertilizer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 1], ["name", "dasdf"], ["medium", "adsfas"], ["type_of_fertilizer", "15:00"], ["created_at", "2017-08-04 00:07:04.279699"], ["updated_at", "2017-08-04 00:07:04.279699"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/plants/2
+Completed 302 Found in 10ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/plants/2" for 127.0.0.1 at 2017-08-03 19:07:04 -0500
+Processing by PlantsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlant Load (0.2ms)[0m  [1m[34mSELECT  "plants".* FROM "plants" WHERE "plants"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering plants/show.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."plant_id" = $1[0m  [["plant_id", 2]]
+  Rendered plants/show.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 75ms (Views: 67.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/plants/2/edit" for 127.0.0.1 at 2017-08-03 19:07:11 -0500
+Processing by PlantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlant Load (0.2ms)[0m  [1m[34mSELECT  "plants".* FROM "plants" WHERE "plants"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering plants/edit.html.erb within layouts/application
+  Rendered plants/_form.html.erb (3.0ms)
+  Rendered plants/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 61ms (Views: 55.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/plants/2/tasks/new" for 127.0.0.1 at 2017-08-03 19:07:14 -0500
+Processing by TasksController#new as HTML
+  Parameters: {"plant_id"=>"2"}
+  [1m[36mPlant Load (0.4ms)[0m  [1m[34mSELECT  "plants".* FROM "plants" WHERE "plants"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (10.5ms)
+  Rendered tasks/new.html.erb within layouts/application (12.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 85ms (Views: 63.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/plants/2/tasks" for 127.0.0.1 at 2017-08-03 19:07:16 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"plant_id"=>"2"}
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT  "plants".* FROM "plants" WHERE "plants"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."plant_id" = $1[0m  [["plant_id", 2]]
+  Rendered tasks/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 54ms (Views: 50.4ms | ActiveRecord: 0.9ms)
+
+
