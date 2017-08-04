@@ -6,5 +6,17 @@
 
 <h4>Fertilizer: <%= @plant.type_of_fertilizer %></h4>
 
+<h6>List of Plant's Task</h6>
+
+  <ul>
+    <% @plant.tasks.each do |task| %>
+      <li><%= task.name %></li>
+      <td><%= link_to 'Show', [task.plant, task] %></td>
+      <td><%= link_to 'Edit', edit_plant_task_path(task.plant, task) %></td>
+      <td><%= link_to 'Destroy', [task.plant, task], :confirm => 'Are you sure?', :method => :delete %></td>
+    <%end%>
+  </ul>
+
+<%= link_to "Add A Task For This Plant", new_plant_task_path(@plant) %>
 <%= link_to "Edit This PLant", edit_plant_path(id: @plant) %>
 <%= link_to "Delete This Plant", @post, method: :delete, data: {confirm: 'Are you sure you want to delete this plant?'} %> 

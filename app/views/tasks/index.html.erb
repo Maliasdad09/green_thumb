@@ -1,10 +1,29 @@
-<h1>List of Task</h1>
+<h1>Listing Plant's Tasks:</h1>
 
-  <ul>
-    <% @tasks.each do |task| %>
-      <li> <a href="/tasks/<%= task.id %>"><%= task.name %></a></li>
-    <%end%>
-  </ul>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Time</th>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
 
-<%= link_to "Create a new Task", new_task_path(@task) %> 
+<% @tasks.each do |task| %>
+  <tr>
+    <td><%= task.name %></td>
+    <td><%= task.description %></td>
+    <td><%= task.time %></td>
+    <td><%= task.price %></td>
+    <td><%= link_to 'Show', [task.plant, task] %></td>
+    <td><%= link_to 'Edit', edit_plant_task_path(task.plant, task) %></td>
+    <td><%= link_to 'Destroy', [task.plant, task], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
 
+<br />
+
+<%= link_to 'New Task', new_plant_task_path(params[:plant_id]) %>
