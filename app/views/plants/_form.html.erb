@@ -1,12 +1,12 @@
 <%= form_for @plant do |f| %>
   <%= f.label :name %>
-  <%= f.text_area :name %> <br />
+  <%= f.text_field :name %> <br />
 
   <%= f.label :medium %>
-  <%= f.text_area :medium %><br />
+  <%= f.text_field :medium %><br />
 
   <%= f.label :type_of_fertilizer %>
-  <%= f.time_field :type_of_fertilizer %><br />
+  <%= f.text_field :type_of_fertilizer %><br />
 
   <%= f.submit %>
 <% end %>  
