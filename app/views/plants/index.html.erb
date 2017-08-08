@@ -1,9 +1,9 @@
 <h1>List of Plant</h1>
-
-  <ul>
-    <% @plants.each do |plant| %>
-      <li> <a href="/plants/<%= plant.id %>"><%= plant.name %></a></li>
-    <%end%>
-  </ul>
-
+  <div class="container" class="col-xs-1" align="center">
+    <ul>
+      <% @plants.each do |plant| %>
+        <li> <a href="/plants/<%= plant.id %>"><%= plant.name %></a></li>
+      <%end%>
+    </ul>
+  </div>
 <%= link_to "Create a new Plant", new_plant_path(@plant) %> 

@@ -44,6 +44,7 @@ class TasksController < ApplicationController
 
   def find_plant
     @plant = Plant.find(params[:plant_id])
+    
   end
 
   def find_task

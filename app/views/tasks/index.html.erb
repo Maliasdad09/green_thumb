@@ -1,29 +1,32 @@
 <h1>Listing Plant's Tasks:</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Time</th>
-    <th>Price</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="media">
+  <div class="media-body">
+    <table class="table table-hover">
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Time</th>
+        <th>Price</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
 
-<% @tasks.each do |task| %>
-  <tr>
-    <td><%= task.name %></td>
-    <td><%= task.description %></td>
-    <td><%= task.time %></td>
-    <td><%= task.price %></td>
-    <td><%= link_to 'Show', [task.plant, task] %></td>
-    <td><%= link_to 'Edit', edit_plant_task_path(task.plant, task) %></td>
-    <td><%= link_to 'Destroy', [task.plant, task], :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.name %></td>
+        <td><%= task.description %></td>
+        <td><%= task.time %></td>
+        <td><%= task.price %></td>
+        <td><%= link_to 'Show', [task.plant, task], class: 'btn btn-mini btn-info' %></td>
+        <td><%= link_to 'Edit', edit_plant_task_path(task.plant, task), class: 'btn btn-mini btn-success' %></td>
+        <td><%= link_to 'Destroy', [task.plant, task], class: 'btn btn-mini btn-danger', :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+    </table>
+  </div>
+</div>
 <br />
 
 <%= link_to 'New Task', new_plant_task_path(params[:plant_id]) %>

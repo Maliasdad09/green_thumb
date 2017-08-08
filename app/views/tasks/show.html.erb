@@ -1,25 +1,34 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @task.name %>
-</p>
+<h1>Listing Plant's Tasks:</h1>
 
-<p>
-  <b>Description:</b>
-  <%= @task.description %>
-</p>
+<div class="media">
+  <div class="media-body">
+    <table class="table table-hover">
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Time</th>
+        <th>Price</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
 
-<p>
-  <b>Time:</b>
-  <%= @task.time %>
-</p>
+    
+      <tr>
+        <td><%= @task.name %></td>
+        <td><%= @task.description %></td>
+        <td><%= @task.time %></td>
+        <td><%= @task.price %></td>
+        
+      </tr>
+  
+    </table>
+  </div>
+</div>
 
-<p>
-  <b>Price:</b>
-  <%= @task.price %>
-</p>
 
+<%= link_to 'Edit', edit_plant_task_path(@task.plant, @task), class: 'btn btn-mini btn-success' %> |
+<%= link_to 'Back', plant_tasks_path(@task.plant), class: 'btn btn-mini btn-primary' %>
 
-<%= link_to 'Edit', edit_plant_task_path(@task.plant, @task) %> |
-<%= link_to 'Back', plant_tasks_path(@task.plant) %>

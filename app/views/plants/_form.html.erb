@@ -1,12 +1,22 @@
-<%= form_for @plant do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %> <br />
 
-  <%= f.label :medium %>
-  <%= f.text_field :medium %><br />
-
-  <%= f.label :type_of_fertilizer %>
-  <%= f.text_field :type_of_fertilizer %><br />
-
-  <%= f.submit %>
+<%= form_for @plant, :html => {:class => "form-horizontal center"} do |f| %>
+  <div class="form-group">
+    <%= f.label :name, class: "col-md-4 control-label" %>
+    <div class="col-md-5">
+      <%= f.text_field :name, class: "form-control" %> <br />
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :medium, class: "col-md-4 control-label" %>
+    <div class="col-md-5">
+      <%= f.text_field :medium, class: "form-control" %><br />
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :type_of_fertilizer, class: "col-md-4 control-label" %>
+    <div class="col-md-5">
+      <%= f.text_field :type_of_fertilizer, class: "form-control" %><br />
+    </div>
+  </div>
+  <%= f.submit :Submit, class: "btn btn-success"%>
 <% end %>  
